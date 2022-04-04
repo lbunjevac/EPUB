@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uuid">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<dc:identifier id="uuid">urn:uuid:e5124e96-b426-11ec-b909-0242ac120002</dc:identifier>
+		<meta property="dcterms:modified">2022-04-04T0414:30:13Z</meta>
+
+		<dc:title id="t1">Ježeva kućica</dc:title>
+		<meta refines="#t1" property="language">main</meta>
+		<meta refines="#t1" property="display-seq">1</meta>
+
+		<dc:Description id="d1">život Ježurke Ježića i ostalih stanovnika šume</dc:Description>
+		<meta refines="#d1" property="title-type">Description</meta>
+		<meta refines="#d1" property="display-seq">2</meta>
+
+		<dc:creator id="author">Branko Čopić</dc:creator>
+        <meta refines="#author" property="role" scheme="marc:relators" id="role">aut/meta>
+
+		<dc:creator id="ediotr">Ana Kulušić</dc:creator>
+        <meta refines="#editor" property="role" scheme="marc:relators" id="role">edt</meta>
+
+        <dc:creator id="ilustrator>Vlado Jakelić</dc:creator>
+        <meta refines="#ilustartor" property="role" scheme="marc:relators" id="role">ill</meta>
+
+		<dc:language>hr</dc:language>
+
+		<dc:publisher>Mladost, Zagreb</dc:publisher>
+
+		<dc:date>1982</dc:date>
+
+		<dc:subject id="subject01">JUVENILE FICTION / General</dc:subject>
+        <meta refines="#subject01" property="authority">BISAC</meta>
+        <meta refines="#subject01" property="term">JUV000000</meta>
+
+
+	</metadata>
+	<manifest>
+		<item href="images/cover.png" id="cover-img" media-type="image/png" properties="cover-image"/>
+		<item href="css/epub.css" id="css01" media-type="text/css"/>
+		<item href="css/nav.css" id="css02" media-type="text/css"/>
+		<item href="cover.xhtml" id="cover" media-type="application/xhtml+xml"/>
+		<item href="s04.xhtml" id="s04" media-type="application/xhtml+xml"/>
+		<item href="nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav scripted"/>
+		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cover"/>
+		<itemref idref="nav"/>
+		<itemref idref="s04"/>
+	</spine>
+</package>
